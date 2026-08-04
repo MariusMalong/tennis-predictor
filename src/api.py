@@ -11,3 +11,10 @@ def get_prediction(rank_diff: float, points_diff: float, points_data_missing: in
     return predict_match(rank_diff, points_diff, points_data_missing,
                          career_win_rate_diff, surface_win_rate_diff,
                          recent_form_diff, surface_clay, surface_grass, surface_hard)
+@app.get("/")
+def read_root():
+    return{
+        "message": "ATP Tennis Match Predictor API",
+        "docs": "/docs",
+        "predict_endpoint": "/predict"
+    }
