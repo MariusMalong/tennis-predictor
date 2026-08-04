@@ -13,7 +13,7 @@ Hosted on Render's free tier, which spins down after 15 minutes of inactivity. T
 
 This project works through 68,300+ ATP matches from 2000 to 2026, sourced from Kaggle. The goal was to predict match winners using a mix of raw stats (ranking, ranking points) and engineered features (career win rate, surface-specific win rate, recent form), all built with careful attention to avoiding data leakage.
 
-The best mdoel (XGBoost) reached 64.9% accuracy, modestly ahead of a simple "higher-ranked player wins" baseline at 64.2%. This is broadly in line with expectations for this kind of problem.
+The best model (XGBoost) reached 64.9% accuracy, modestly ahead of a simple "higher-ranked player wins" baseline at 64.2%. This is broadly in line with expectations for this kind of problem.
 
 ## What's in this repo
 
