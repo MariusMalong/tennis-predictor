@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 
 model = joblib.load('models/xgb_model.pkl')
-feature_cols = ('models/feature_cols.pkl')
+feature_cols = joblib.load('models/feature_cols.pkl')
 
 def predict_match(rank_diff, points_diff, points_data_missing,
                   career_win_rate_diff, surface_win_rate_diff,
